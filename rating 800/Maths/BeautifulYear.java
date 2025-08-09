@@ -1,5 +1,6 @@
 import java.util.*;
 import java.io.*;
+
 public class BeautifulYear{
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static StringTokenizer st;
@@ -8,7 +9,6 @@ public class BeautifulYear{
         while(st == null || !st.hasMoreTokens()){
             st = new StringTokenizer(br.readLine());
         }
-
         return st.nextToken();
     }
 
@@ -17,15 +17,14 @@ public class BeautifulYear{
     }
 
     static int solve() throws IOException{
-       int n = nextInt();
-       int year = n + 1;
-
-       while(true){
+        int n = nextInt();
+        int year = n + 1;
+        while(true){
             if(hasDistinctDigits(year)){
                 return year;
             }
             year++;
-       }
+        }
     }
 
     static boolean hasDistinctDigits(int year){
