@@ -16,7 +16,6 @@ public class RestoringThreeNumbers{
         return Integer.parseInt(next());
     }
 
-    static int solve() throws IOException{
     static void solve() throws IOException{
         String[] parts = br.readLine().trim().split(" ");
         int[] arr = new int[4];
